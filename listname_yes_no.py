@@ -1,12 +1,11 @@
 #Create a program that ask user to input name and age.
 # Print error message when the input is not valid. Set your own definition of valid name and valid age.
-while True:
-    try:
-        var1 = int(input("Please input name "))
-        break
+
+try:
+     var1 = (input("Please input name "))
         
-    except:
-        print("Try again")  
+except:
+    print("Try again")  
     
 while True:    
     try:   
@@ -15,7 +14,11 @@ while True:
     except:
         print("Try again")       
     
+data = []
+data.append(("name", var1))
+data.append(("age - {var2}"))
 
+print(data)
 
 
 
